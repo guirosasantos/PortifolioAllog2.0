@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Guilherme Rosa Allog</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/Images/Imagem Capa Ragnar.jpg">
+</head>
+
+<body>
+    <section id="Home" class="header">
+        <div id="menu-background"></div>
+        <nav class="header__nav">
+            <ul class="nav__header-list">
+                <li class="header-list__button"><a href="#Home"><i class="fa-solid fa-house"
+                            style="font-size: 0.9375vw;"></i>
+                        <span class="buttons-list__text">&nbsp;HOME</span></a></li>
+                <li class="header-list__button"><a href="#About"><i class="fa-solid fa-user"
+                            style="font-size: 0.9375vw;"></i>
+                        <span class="buttons-list__text">&nbsp;ABOUT</span></a></li>
+                <li class="header-list__button"><a href="#Portifolio"><i class="fa-solid fa-briefcase"
+                            style="font-size: 0.9375vw;"></i>
+                        <span class="buttons-list__text">&nbsp;PORTIFOLIO</span></a></li>
+                <li class="header-list__button"><a href="#Skills"><i class="fa-solid fa-brain"
+                            style="font-size: 0.9375vw;"></i>
+                        <span class="buttons-list__text">&nbsp;SKILLS</span></a></li>
+                <li class="header-list__button"><a href="#Experience"><i class="fa-solid fa-user-tie"
+                            style="font-size: 0.9375vw;"></i>
+                        <span class="buttons-list__text">&nbsp;EXPERIENCE</span></a></li>
+                <li class="header-list__button"><a href="#Education"><i class="fa-solid fa-user-graduate"
+                            style="font-size: 0.9375vw;"></i>
+                        <span class="buttons-list__text">&nbsp;EDUCATION</span></a></li>
+                <li class="header-list__button"><a href="#Contact"><i class="fa-solid fa-envelope"
+                            style="font-size: 0.9375vw;"></i>
+                        <span class="buttons-list__text">&nbsp;CONTACT</span></a></li>
+                <li class="nav__hamburguer-menu" onclick="ChangeHamburguerPosition(this)"><i class="fa-solid fa-bars"
+                        style="font-size: 2.60416667vw;"></i></li>
+            </ul>
+        </nav>
+        <figure class="header__img">
+            <img class="header__img" src="/Images/Imagem Capa Ragnar.jpg" alt="Foto do Ragnar">
+        </figure>
+        <div class="header__header-main-text">
+            <div class="header-main-text__header-tittle">
+                <div class="header-tittle__hello">Olá!</div>
+                <div class="header-tittle__me">
+                    <p>EU SOU</p>
+                    <h1 class="header-tittle-h1">RAGNAR LOTHBROK</h1>
+                </div>
+            </div>
+            <p class="header-main-text__paragraph">
+                I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly
+                experiences, I am passionate about building excellent software thatimproves the lives of those
+                around
+                me. </p>
+            <a href="#About"><button class="header-main-text__button">MAIS</button></a>
+        </div>
+    </section>
+
+
+    <section id="About">
+        <div class="about__wrapper">
+            <h2 class="section-tittle"> Sobre</h2>
+            <!-- aqui o nome da classe é section-tittle e não AboutTittle pois é padrão para todas as seções
+                 -->
+            <div class="text__info">
+                <dl class="info__about-list">
+                    <dt class="about-list__tittle">NOME</dt>
+                    <dd class="about-list__info">Guilherme Rosa dos Santos</dd>
+                    <dt class="about-list__tittle">IDADE</dt>
+                    <dd class="about-list__info">19 Anos</dd>
+                    <dt class="about-list__tittle">PROFISSÃO</dt>
+                    <dd class="about-list__info">Desenvolvedor</dd>
+                    <dt class="about-list__tittle">NATURALIDADE</dt>
+                    <dd class="about-list__info">Itajaí/SC</dd>
+                    <dt class="about-list__tittle">NACIONALIDADE</dt>
+                    <dd class="about-list__info">Brasileiro</dd>
+                    <dt class="about-list__tittle">GITHUB</dt>
+                    <dd class="about-list__info-link"><a
+                            href="https://github.com/guirosasantos">WWW.GITHUB.COM/GUIROSASANTOS</a></dd>
+                </dl>
+            </div>
+            <a href="#Portifolio"><button class="text__button">Curriculo</button></a>
+        </div>
+        <figure class="about__img">
+            <img src="Images/Imagem Sobre Ragnar.jpg">
+        </figure>
+    </section>
+
+    <section id="Portifolio">
+        <h2 class="section-tittle"> Portifólio</h2>
+        <!-- aqui o nome da classe é section-tittle e não PortifolioTittle pois é padrão para todas as seções -->
+        <div class="portifolio__main">
+            <ul class="main__icon-list">
+                <li class="icon-list" id="WEBSITES" onclick="showWebsites()"><i class="fa-solid fa-code"></i><span
+                        class="buttons-list__text">&nbsp;WEBSITES</span>
+                </li>
+                <li class="icon-list" id="PROJECTS" onclick="showProjects()"><i
+                        class="iconsThirdArticle fa-solid fa-palette"></i> <span
+                        class="buttons-list__text">&nbsp;PROJECTS</span>
+                </li>
+                <li class="icon-list" id="CAMERA" onclick="showCameras()"><i
+                        class="iconsThirdArticle fa-solid fa-camera"></i> <span
+                        class="buttons-list__text">&nbsp;CAMERA</span>
+                </li>
+            </ul>
+            <div class="main__projects" id="grid-portifolio">
+                <div class="projects__site"><a href="https://unimed.com.br"><img
+                            src="Images/Portifolio/portfolio-website-1.jpg" alt=""></a></div>
+                <div class="projects__site"><a href="https://www.starbucks.com.br/"><img
+                            src="Images/Portifolio/portfolio-website-2.jpg" alt=""></a></div>
+                <div class="projects__site"><a href="https://pt.wikipedia.org/wiki/Tiradentes"><img
+                            src="Images/Portifolio/portfolio-website-3.jpg" alt=""></a></div>
+                <div class="projects__site"><a href="https://nfl.com.br"><img
+                            src="Images/Portifolio/portfolio-website-4.jpg" alt=""></a></div>
+                <div class="projects__site"><a href="https://smartfit.com.br"><img
+                            src="Images/Portifolio/portfolio-website-6.jpg" alt=""></a></div>
+                <div class="projects__site"><a href="https://br.pinterest.com/tattoo2me/tatuagem-tattoo/"><img
+                            src="Images/Portifolio/portfolio-website-7.jpg" alt=""></a></div>
+            </div>
+            <a href="#Skills"><button class="main_button">MAIS</button></a>
+        </div>
+    </section>
+
+
+    <section id="Skills">
+        <h2 class="section-tittle"> Skills</h2>
+        <!-- aqui o nome da classe é section-tittle e não SkillsTittle pois é padrão para todas as seções -->
+        <div class="skills__main">
+            <div class="skill-container">
+                <div class="skill-container__tittle">HTML</div>
+                <img class="skill-container__img" src="Images/Skills/html.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">CSS</div>
+                <img class="skill-container__img" src="Images/Skills/css.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">C#</div>
+                <img class="skill-container__img" src="Images/Skills/csharp.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">JavaScript</div>
+                <img class="skill-container__img" src="Images/Skills/javascript.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">.Net Core</div>
+                <img class="skill-container__img" src="Images/Skills/netcore.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star-half fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">TypeScript</div>
+                <img class="skill-container__img" src="Images/Skills/ts.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star-half fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">React</div>
+                <img class="skill-container__img" src="Images/Skills/react.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star-half fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">VS Code</div>
+                <img class="skill-container__img" src="Images/Skills/vscode.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star-half fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">GIT</div>
+                <img class="skill-container__img" src="Images/Skills/git.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star-half fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">PostgreSQL</div>
+                <img class="skill-container__img" src="Images/Skills/postgresql.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">WebPack</div>
+                <img class="skill-container__img" src="Images/Skills/webpack.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">Nginx</div>
+                <img class="skill-container__img" src="Images/Skills/nginx.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">Ubuntu</div>
+                <img class="skill-container__img" src="Images/Skills/ubuntu.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">AWS</div>
+                <img class="skill-container__img" src="Images/Skills/aws.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">Photoshop</div>
+                <img class="skill-container__img" src="Images/Skills/photoshop.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+            <div class="skill-container">
+                <div class="skill-container__tittle">Figma</div>
+                <img class="skill-container__img" src="Images/Skills/figma.png">
+                <div class="skill-container__stars">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #F5B63F;"></i>
+                </div> <!-- mexer aqui depois -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Experience">
+        <div class="experience__tittle">
+            <h2 class="section-tittle"> EXPERIÊNCIA</h2>
+            <!-- aqui o nome da classe é section-tittle e não ExperienceTittle pois é padrão para todas as seções -->
+        </div>
+        <div class="experience__info">
+            <div class="info__info-left">
+                <dl class="info-left__left-list">
+                    <dt class="left-list__tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 1.145834vw;"></i>
+                        <p class="left-list__paragraph">2012 - 2014</p>
+                    </dt>
+                    <dd class="left-list__description">
+                        <h3 class="description__name">GOOGLE</h3>
+                        <p class="description__function">Estágio na Google atuando na equipe de<br> desenvolvimento de
+                            ferramentas para o ADS.</p>
+                    </dd>
+                    <dt class="left-list__tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 1.145834vw;"></i>
+                        <p class="left-list__paragraph">2014 - 2018</p>
+                    </dt>
+                    <dd class="left-list__description">
+                        <h3 class="description__name">BOOKING</h3>
+                        <p class="description__function">Cargo de desenvolvedor junior na equipe de<br> desenvolvimento
+                            back
+                            end.</p>
+                    </dd>
+                    <dt class="left-list__tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 1.145834vw;"></i>
+                        <p class="left-list__paragraph">2018 - 2021</p>
+                    </dt>
+                    <dd class="left-list__description">
+                        <h3 class="description__name">FACEBOOK</h3>
+                        <p class="description__function">Cargo de desenvolvedor pleno na equipe de criação da<br>
+                            biblioteca
+                            React.</p>
+                    </dd>
+                    <dt class="left-list__tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 1.145834vw;"></i>
+                        <p class="left-list__paragraph">2021 - Trabalhando</p>
+                    </dt>
+                    <dd class="left-list__description">
+                        <h3 class="description__name">TWITTER</h3>
+                        <p class="description__function">Cargo de desenvolvedor sênior na equipe de criação do<br>
+                            aplicativo X.</p>
+                    </dd>
+                </dl>
+                <a href="#Education"><button class="info-left__button">MAIS</button></a>
+            </div>
+            <div class="info__info-right">
+                <div class="info-right__container">
+                    <div class="container__number">9</div>
+                    <div class="container__description">ANOS DE EXPERIÊNCIA</div>
+                </div>
+                <div class="info-right__container">
+                    <div class="container__number">16</div>
+                    <div class="container__description">PROJETOS INDIVIDUAIS</div>
+                </div>
+                <div class="info-right__container">
+                    <div class="container__number">72</div>
+                    <div class="container__description">PROJETOS EM EQUIPE</div>
+                </div>
+                <div class="info-right__container">
+                    <div class="container__number">87</div>
+                    <div class="container__description">CURSOS DE ESPECIALIZAÇÃO</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Education">
+        <h2 class="section-tittle"> EDUCAÇÃO</h2>
+        <!-- aqui o nome da classe é section-tittle e não EducationTittle pois é
+            padrão para todas as seções -->
+        <div class="education__information">
+            <div class="information__graduation">
+                <h3 class="graduation__tittle">BACHARELADO E PÓS-GRADUAÇÃO</h3>
+                <dl class="graduation__graduation-list">
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2012 - 2016</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">CIÊNCIA DA COMPUTAÇÃO</b>
+                        <p class="graduation-description__function">Bracharelado em Ciência da Computação pela Univali
+                        </p>
+                    </dd>
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2012 - 2016</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">BIG DATA</b>
+                        <p class="graduation-description__function">Pós graduado em Big Data pela UFSC
+                        </p>
+                    </dd>
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2012 - 2016</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">COMPUTAÇÃO APLICADA</b>
+                        <p class="graduation-description__function">Mestrado em Computação Aplicada pela UFSP
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="information__graduation">
+                <h3 class="graduation__tittle">CURSO DE ESPECIALIZAÇÃO</h3>
+                <dl class="graduation__graduation-list">
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2019 - 2020</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">FRONTEND</b>
+                        <p class="graduation-description__function">Curso de formação FrontEnd ministrado por Jackson
+                            Camara. Total de 500 horas concluídas.
+                        </p>
+                    </dd>
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2021 - 2022</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">BACKEND</b>
+                        <p class="graduation-description__function">Curso de formação BackEnd ministrado por Jackson
+                            Camara. Total de 500 horas concluídas.
+                        </p>
+                    </dd>
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2023 - ANDAMENTO</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">FullStack</b>
+                        <p class="graduation-description__function">Curso de formação FullStack ministrado por Jackson
+                            Camara. Total de 500 horas concluídas.
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="information__graduation">
+                <h3 class="graduation__tittle">CURSO DE ESPECIALIZAÇÃO</h3>
+                <dl class="graduation__graduation-list">
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2017 - 2019</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">INGLÊS</b>
+                        <p class="graduation-description__function">Curso de Inglês na Univali Idiomas. Níveis a1, a2,
+                            b1
+                        </p>
+                    </dd>
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2020 - 2021</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">INGLÊS</b>
+                        <p class="graduation-description__function">Curso de Inglês na Wizard. Níveis b2, c1
+                        </p>
+                    </dd>
+                    <dt class="graduation-list__graduation-tittle">
+                        <i class="fa-solid fa-calendar-days" style="color: #f5b63f; font-size: 0.9375vw;"></i>
+                        <p class="graduation-tittle__paragraph">2021 - ANDAMENTO</p>
+                    </dt>
+                    <dd class="graduation-list__graduation-description">
+                        <b class="graduation-description__name">INGLÊS</b>
+                        <p class="graduation-description__function">Curso de Inglês particular. Nível c2
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <a href="#Contact"><button class="education__button">MAIS</button></a>
+    </section>
+
+
+    <section id="Contact">
+        <h2 class="section-tittle"> CONTATO</h2>
+        <div class="contact__contact-main">
+            <div class="contact-main-left">
+                <div class="contact-main-left-info">
+                    <ul class="contact__contct-list">
+                        <li class="contact-list__contact-item">
+                            <i class="fa-regular fa-envelope"
+                                style="background-color: var(--secondary-color); border-radius: 0.381770834vw; font-size: 1.5625vw; padding: 3%; color: black; margin-right: 0.6vw;"></i>
+                            <div class="contact-item-text">
+                                <b class="contact-tittle">EMAIL</b>
+                                <p class="contact-information">meuemail@gmail.com</p>
+                            </div>
+                        </li>
+                        <li class="contact-list__contact-item">
+                            <i class="fa-solid fa-phone fa-flip-horizontal"
+                                style="background-color: var(--secondary-color); border-radius: 0.381770834vw; font-size: 1.5625vw; padding: 3%; color: black; margin-right: 0.6vw;"></i>
+                            <div class="contact-item-text">
+                                <b class="contact-tittle">TELEFONE</b>
+                                <p class="contact-information">47 9 9999-9999</p>
+                            </div>
+                        </li>
+                        <a href="https://api.whatsapp.com/send/?phone=5547997541950">
+                            <li class="contact-list__contact-item">
+                                <i class="fa-brands fa-whatsapp"
+                                    style="background-color: var(--secondary-color); border-radius: 0.381770834vw; font-size: 1.5625vw; padding: 3%; color: black; margin-right: 0.6vw;"></i>
+                                <div class="contact-item-text">
+                                    <b class="contact-tittle">WHATSAPP</b>
+                                    <p class="contact-information">47 9 9999-9999</p>
+                                </div>
+                            </li>
+                        </a>
+                        <li class="contact-list__contact-item">
+                            <i class="fa-brands fa-telegram"
+                                style="background-color: var(--secondary-color); border-radius: 0.381770834vw; font-size: 1.5625vw; padding: 3%; color: black; margin-right: 0.6vw;"></i>
+                            <div class="contact-item-text">
+                                <b class="contact-tittle">TELEGRAM</b>
+                                <p class="contact-information">47 9 9999-9999</p>
+                            </div>
+                        </li>
+                        <li class="contact-list__contact-item">
+                            <i class="fa-brands fa-skype"
+                                style="background-color: var(--secondary-color); border-radius: 0.381770834vw; font-size: 1.5625vw; padding: 3%; color: black; margin-right: 0.6vw;"></i>
+                            <div class="contact-item-text">
+                                <b class="contact-tittle">SKYPE</b>
+                                <p class="contact-information">meuskype</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="contact-main-left-socials">
+                    <ul class="socials-list">
+                        <li class="socials-item">
+                            <a class="socials-link" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"
+                                    style="font-size: 1.5625vw;"></i></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-link" href="https://twitter.com"><i class="fa-brands fa-twitter"
+                                    style="font-size: 1.5625vw;"></i></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-link" href="https://www.instagram.com"><i class="fa-brands fa-instagram"
+                                    style="font-size: 1.5625vw;"></i></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-link" href="https://www.youtube.com"><i class="fa-brands fa-youtube"
+                                    style="font-size: 1.5625vw;"></i></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-link" href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"
+                                    style="font-size: 1.5625vw;"></i></a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+            <div class="contact_form">
+                <form method="POST" onsubmit="return submitForm()" class="row my-form">
+                    <input class="form__input" id="form-name" type="text" name="nome" placeholder="NOME">
+                    <input class="form__input" id="form-email" type="text" name="email" placeholder="EMAIL">
+                    <input class="form__input" id="form-phone" type="text" name="telefone" placeholder="TELEFONE">
+                    <input class="form__input" id="form-subject" type="text" name="_subject" placeholder="ASSUNTO">
+                    <textarea class="form__input-message" id="form-message" name="mensagem" placeholder="MENSAGEM"
+                        cols="30" rows="6"></textarea>
+                    <input class="form__submit" type="submit" value="ENVIAR">
+                    <input type="hidden" name="_honey" style="display: none" />
+                    <input type="hidden" name="_captcha" value="false" />
+                </form>
+            </div>
+            <div id="snackbar">Email Enviado com sucesso</div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/Js/MainScript.js"></script>
+</body>
+
+</html>
